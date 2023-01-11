@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Style Website | Korsat X Parmaga</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="assets/imgs/logo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBx">
+                <h2>Assassin's Creed</h2>
+                <p>In the ninth century CE, Baghdad is at its height, leading the world in science, art, innovation, and commerce. Amid its bustling urban landscape, 
+                  a conflicted young orphan with a tragic past must navigate the streets to survive.</p>
+                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/mirage">See Details</a>
+            </div>
+
+
+            <div class="imgsBx">
+              
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/img_01.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/img_02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/img_03.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imgs/img_04.png" />
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/ba.her.754">
+                    <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+
+            <li><a href="https://twitter.com/Baherelgazar?t=84Tws3wX75bV3sfy1jb32g&s=09">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="https://www.instagram.com/b.ah.er/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+    </section>
+
+
+    <!-- =================== JS =================== -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+    </script>
+    <!-- icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
